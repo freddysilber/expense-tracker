@@ -10,7 +10,13 @@ export default class UsersContainer extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch('http://localhost:3000/api/v1/users')
+		fetch('/api/v1/users')
+			// fetch('/api/v1/users', {
+			// 	headers: {
+			// 		'Content-Type': 'application/json',
+			// 		'Accept': 'application/json'
+			// 	}
+			// })
 			.then(response => response.json())
 			.then(data => this.setState({ users: data.data }))
 			.catch(error => console.log(error))
