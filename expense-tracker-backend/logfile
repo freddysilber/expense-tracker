@@ -1,0 +1,7 @@
+2020-05-08 16:24:18.174 MDT [5436] LOG:  starting PostgreSQL 12.2 on x86_64-apple-darwin19.4.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.59), 64-bit
+2020-05-08 16:24:18.175 MDT [5436] LOG:  listening on IPv6 address "::1", port 5432
+2020-05-08 16:24:18.175 MDT [5436] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-05-08 16:24:18.176 MDT [5436] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-05-08 16:24:18.186 MDT [5437] LOG:  database system was shut down at 2020-05-08 16:23:53 MDT
+2020-05-08 16:24:18.189 MDT [5436] LOG:  database system is ready to accept connections
+2020-05-08 16:24:24.741 MDT [5448] FATAL:  database "expense_tracker_backend_development" does not exist
