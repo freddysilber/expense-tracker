@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 
 export default class UsersContainer extends React.Component {
 
@@ -10,22 +11,15 @@ export default class UsersContainer extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch('/api/v1/users')
-			// fetch('/api/v1/users', {
-			// 	headers: {
-			// 		'Content-Type': 'application/json',
-			// 		'Accept': 'application/json'
-			// 	}
-			// })
-			.then(response => response.json())
-			.then(data => this.setState({ users: data.data }))
-			.catch(error => console.log(error))
+		axios.get('/api/v1/users')
+			.then(data => this.setState({ users: data.data.data }))
+			.catch(error => console.error(error))
 	}
 
 	render() {
 		return (
 			<>
-				{this.state.users.map(user => <div key={user.id}>{user.attributes.username}</div>)}
+				{this.state.users.map(user => <div key={user.id}>Username: {user.attributes.username}</div>)}
 			</>
 		)
 	}
