@@ -15,3 +15,7 @@
 2020-05-09 21:51:17.213 MDT [56943] FATAL:  database "skate_api_development" does not exist
 2020-05-09 21:54:02.454 MDT [57088] FATAL:  database "skate_api_development" does not exist
 2020-05-09 21:54:18.382 MDT [57112] FATAL:  database "skate_api_development" does not exist
+2020-05-10 20:16:23.426 MDT [5436] LOG:  received smart shutdown request
+2020-05-10 20:16:23.429 MDT [5436] LOG:  background worker "logical replication launcher" (PID 5443) exited with exit code 1
+2020-05-10 20:16:23.429 MDT [5438] LOG:  shutting down
+2020-05-10 20:16:23.452 MDT [5436] LOG:  database system is shut down
